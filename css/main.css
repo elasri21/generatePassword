@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: sans-serif;
+}
+
+span {
+  vertical-align: middle;
+}
+
+.container {
+  margin: 30px 30px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 500px;
+    margin: 50px auto !important;
+  }
+}
+.container h1 {
+  text-align: center;
+  color: #ccc;
+  padding: 20px;
+  font-size: 15px;
+}
+.container .generated-pass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #121222;
+}
+.container .generated-pass span {
+  color: #fff;
+}
+.container .generated-pass i {
+  color: #7fffd4;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.container .generated-pass i:hover {
+  color: #fff;
+}
+.container form {
+  padding: 20px;
+  background-color: #121222;
+  margin-top: 15px;
+}
+.container form p {
+  margin-bottom: 15px;
+}
+.container form p label {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 20px;
+}
+.container form p label.range-title {
+  margin-left: 0;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container form p #range {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  accent-color: #7fffd4;
+  border: none;
+  outline: none;
+}
+.container form p .box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  accent-color: #7fffd4;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.container form p .box:hover {
+  border-color: #7fffd4;
+}
+.container form p.strength {
+  padding: 10px;
+  background-color: #000;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.container form p.strength .parent {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.container form p.strength .parent .rect {
+  display: inline-block;
+  width: 5px;
+  height: 15px;
+  border: 1px solid #ccc;
+}
+.container form p.btn-container {
+  margin-top: 15px;
+}
+.container form p.btn-container button {
+  width: 100%;
+  background-color: #7fffd4;
+  color: #121222;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #7fffd4;
+  outline: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.container form p.btn-container button i {
+  margin-left: 10px;
+}
+.container form p.btn-container button:hover {
+  background-color: #121222;
+  color: #7fffd4;
+}
+
+/*# sourceMappingURL=main.css.map */

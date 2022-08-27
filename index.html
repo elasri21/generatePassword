@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Password Generator App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Password Generator</h1>
+        <p class="generated-pass">
+            <span>gdhhdgdRWCjs635</span>
+            <i class="fa-solid fa-copy"></i>
+        </p>
+        <form>
+            <p class="length">
+                <label for="range" class="range-title">
+                    <span>Character Length</span>
+                    <span class="num-of-chars">0</span>
+                </label>
+                <input type="range" name="range" id="range" max="20" min="0">
+            </p>
+            <p>
+                <input type="checkbox" name="upper" id="upper" class="box upper">
+                <label for="upper">Include Uppercase Letters</label>
+            </p>
+            <p>
+                <input type="checkbox" name="lower" id="lower" class="box lower" checked>
+                <label for="lower">Include Lowercase Letters</label>
+            </p>
+            <p>
+                <input type="checkbox" name="numbers" id="numbers" class="box numbers">
+                <label for="numbers">Include Numbers</label>
+            </p>
+            <p>
+                <input type="checkbox" name="symbol" id="symbol" class="box symbols">
+                <label for="symbol">Include Symbols</label>
+            </p>
+            <p class="strength">
+                <span>strength</span>
+                <span class="parent">
+                    <span class="state">medium</span>
+                    <span class="rect"></span>
+                    <span class="rect"></span>
+                    <span class="rect"></span>
+                    <span class="rect"></span>
+                </span>
+            </p>
+            <p class="btn-container">
+                <button>
+                    Generate
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </p>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
